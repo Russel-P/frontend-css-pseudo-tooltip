@@ -12,6 +12,38 @@ footer p::after {
     content: ' \00a9';
 }
 
+.highlight:hover::before {
+    display: block;
+    content: 'Dit is een latijns woord';
+
+    background-color: hsl(29, 100%, 47%);
+    color: white;
+    border-radius: 4px;
+    font-weight: 300;
+    padding: 4px;
+    width: 200px;
+
+    position: absolute;
+    top: -35px;
+    z-index: 1;
+    left: calc(50% - 100px);
+}
+
+.highlight:hover::after {
+    content: '';
+    display: block;
+
+    border-top: 10px solid hsl(29, 100%, 47%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    position: absolute;
+    bottom: 18px;
+    z-index: 1;
+    left: calc(50% - 5px);
+}
+
+
 body {
     color: white;
 }
