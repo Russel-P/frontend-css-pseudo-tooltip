@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
 
 /* ------------------------------- Styling voor opdracht 1 en 2  -------------------------------- */
-
+.compliment p::before,
+.compliment p::after {
+    display: inline;
+    content: '\0022';
+}
 /* Schrijf hier jouw CSS... */
-
+footer p::after {
+    display: inline;
+    content: ' \00a9';
+}
 
 body {
     color: white;
